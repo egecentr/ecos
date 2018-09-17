@@ -1,0 +1,49 @@
+$number-shadow: 7px;
+
+.more-benefits {
+    background:#534380 url('#{$img-url}bg-more-benefits.jpg') no-repeat 50% 0;
+    height: 940px;
+    padding: 102px 0 0;
+    min-width: $min-width;
+
+    h1 {
+        color: #fff;
+        padding: 0 0 55px;
+    }
+
+    &-list {
+        margin: 0;
+        padding: 0 0 20px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__item {
+            width: 294px;
+            height: 226px;
+            background: #fff;
+            border-radius: 30px;
+            padding: 20px 20px 0 20px;
+            margin: 0 0 30px;
+            box-shadow: 0 0 10px #000;
+            text-align: center;
+        }
+
+        &__number {
+            color: $default-bg-color-pink;
+            font-size: 30px;
+            line-height: normal;
+            font-family: 'open_sansbold';
+            padding: 0 0 15px;
+            text-shadow: 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff, 0 0 $number-shadow #fff,
+                        0 0 10px #000;
+        }
+
+        &__title {
+            padding: 0 0 14px;
+            color: #000;
+            font-family: 'open_sansbold';
+        }
+    }
+}

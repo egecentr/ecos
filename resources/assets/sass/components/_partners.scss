@@ -1,0 +1,25 @@
+.partners {
+    background: #fff;
+    padding: 65px 0 10px;
+    min-width: $min-width;
+
+    h1 {
+        padding: 0 0 10px
+    }
+
+    &-list {
+        margin: 0;
+        padding: 10px 0 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &__item {
+            width: 33%;
+            margin: 0 0 50px;
+            text-align: center;
+        }
+    }
+}

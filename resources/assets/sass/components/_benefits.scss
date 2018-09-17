@@ -1,0 +1,42 @@
+$height-icon-block: 133px;
+
+.benefits {
+    width: $min-width;
+    margin: 0 auto;
+    padding: 85px 0 85px;
+
+    &-list {
+        margin: 0;
+        padding: 0 0 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__item {
+            width: 213px;
+            height: 293px;
+            background: #fff;
+            border-radius: 10px;
+            margin: 0 0 30px;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        &__icon {
+            height: $height-icon-block;
+            line-height: $height-icon-block;
+
+            img {
+                vertical-align: middle;
+            }
+        }
+
+        &__title {
+            color: #000;
+            font-family: 'open_sansbold';
+            padding: 0 0 5px;
+            min-height: 50px;
+        }
+    }
+}

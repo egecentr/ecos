@@ -1,0 +1,24 @@
+@import 'config';
+
+@import 'base/reset';
+@import 'base/body';
+@import 'base/font';
+
+@import 'modules/general';
+@import 'modules/animation';
+@import 'modules/media';
+
+
+@import 'components/header';
+@import 'components/form';
+@import 'components/buttons';
+@import 'components/benefits';
+@import 'components/products';
+@import 'components/how-we-work';
+@import 'components/more-benefits';
+@import 'components/individual-approach';
+@import 'components/order';
+@import 'components/partners';
+@import 'components/contacts';
+@import 'components/footer';
+@import 'components/popup';

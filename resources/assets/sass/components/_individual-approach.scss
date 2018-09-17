@@ -1,0 +1,41 @@
+.individual-approach {
+    padding: 100px 0 50px;
+    background: #fff;
+    min-width: $min-width;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        border: 1px solid #dddddd;
+        width: 454px;
+        min-height: 268px;
+        border-radius: 15px;
+        padding: 35px 20px 20px 35px;
+        margin: 0 0 30px;
+    }
+
+    &-list {
+        margin: 0;
+        padding: 0 0 0;
+        list-style: none;
+
+        &__item {
+            position: relative;
+            padding: 0 0 5px 16px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: 0;
+                width: 10px;
+                height: 9px;
+                background: url('#{$img-url}bulet-list.png') no-repeat;
+            }
+        }
+    }
+}

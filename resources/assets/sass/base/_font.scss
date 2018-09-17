@@ -1,0 +1,48 @@
+/**
+ *  Font
+ */
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('#{$font-url}opensans-bold_1-webfont.woff2') format('woff2'),
+         url('#{$font-url}opensans-bold_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('#{$font-url}opensans-regular_1-webfont.woff2') format('woff2'),
+         url('#{$font-url}opensans-regular_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('#{$font-url}opensans-semibold_1-webfont.woff2') format('woff2'),
+         url('#{$font-url}opensans-semibold_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratblack';
+    src: url('#{$font-url}montserrat-black-webfont.woff2') format('woff2'),
+         url('#{$font-url}montserrat-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('#{$font-url}montserrat-bold-webfont.woff2') format('woff2'),
+         url('#{$font-url}montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,128 @@
+.products {
+    height: 838px;
+    padding: 100px 0 0; 
+    background:#b696dc url('#{$img-url}bg-products.jpg') no-repeat 50% 0;
+    min-width: $min-width;
+
+    h1 {
+        color: #fff;
+    }
+
+    &-menu {
+        margin: 0;
+        padding: 0 0 0 30px;
+        list-style: none;
+
+        &__item {
+            font-size: 18px;
+            margin: 0 30px 20px;
+            padding: 0 0 12px;
+            display: inline-block;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                border-radius: 4px;
+            }
+
+            &_active {
+                &::after {
+                    background: #fff;
+                } 
+            }
+
+            &:hover {
+                &::after {
+                    background: #fff;
+                }  
+            }
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &-slider {
+        background: #fff;
+        height: 445px;
+        border-radius: 30px;
+        position: relative;
+
+        &__arrow {
+            cursor: pointer;
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            width: 47px;
+            height: 74px;
+            background: url('#{$img-url}arrow-slider.png') no-repeat;
+            margin: -37px 0 0;
+
+            &_left {
+                left: -13px;
+            }
+            
+            &_right {
+                right: -13px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .product-item {
+        padding: 35px 0 0;
+        display: flex;
+        height: 445px;
+
+        h2 {
+            color: #7441c4;
+        }
+
+        &-describe {
+            margin: 0;
+            padding: 0 0 20px;
+            list-style: none;
+            font-size: 16px;
+
+            &__item {
+                line-height: 30px;
+                padding: 0 0 2px;
+
+                &_first {
+                    min-height: 90px;
+                }
+
+                span {
+                    color: #000;
+                    font-family: 'open_sansbold';
+                }
+            }
+        }
+
+        &__img {
+            width: 406px;
+            text-align: center;
+            height: 300px;
+            line-height: 300px;
+
+            img {
+                vertical-align: middle;
+            }
+        }
+
+        &__text {
+            width: 450px;
+        }
+    }
+}

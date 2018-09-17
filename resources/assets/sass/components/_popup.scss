@@ -1,0 +1,110 @@
+.popup {
+    background: #fff;
+    width: 567px;
+    color: #989898;
+    font-size: 18px;
+    padding: 40px 50px 60px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+
+    &-text {
+        padding: 0 0 20px;
+        text-align: center;
+    }
+    
+    &-title {
+        font-size: 36px;
+        line-height: 42px;
+        color: #000;
+        font-family: 'open_sansbold';
+        text-align: center;
+        padding: 0 0 25px;
+    }
+
+    &-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        text-align: center;
+        display: none;
+
+        &::before {
+            content: '';
+            height: 100%;
+            width: 1px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: .8);
+    }
+
+    &__close {
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        width: 18px;
+        height: 18px;
+        background: url('#{$img-url}icon-close.png') no-repeat;
+        cursor: pointer;
+    }
+}
+
+.callback-form {
+    width: 295px;
+    margin: 0 auto;
+
+    &__footer {
+        text-align: center;
+        padding: 15px 0 0;
+    }
+}
+
+$callback-input-height: 60px;
+
+.callback-input {
+    width: 100%;
+    border: 0;
+    height: $callback-input-height;
+    background: none;
+    font-size: 16px;
+    font-family: 'open_sansregular';
+
+    &__wrapper {
+        border: 1px solid #d5d5d5;
+        height: $callback-input-height;
+        border-radius: $callback-input-height / 2;
+        margin: 0 0 18px;
+        padding: 0 10px 0 55px;
+
+        &_icon-user {
+            background: url('#{$img-url}icon-user.png') no-repeat 16px 50%;
+        }
+
+        &_icon-phone {
+            background: url('#{$img-url}icon-phone-2.png') no-repeat 20px 50%;
+        }
+    }
+}
+
+.thank-you {
+    text-align: center;
+    font-size: 24px;
+    color: #282828;
+    padding: 0 0 100px;
+    background: url('#{$img-url}icon-like.png') no-repeat 50% 100%;
+}

@@ -1,0 +1,141 @@
+$actve-color: #fec995;
+$header-height: 957px;
+
+.header {
+    height: $header-height;
+    background:#ae8cd6 url('#{$img-url}bg-header.jpg') no-repeat 50% 0;
+    padding: 16px 0 0;
+    color: #fff;
+    min-width: $min-width;
+
+    .content-center {
+        position: relative;
+        height: 100%;
+    }
+
+    &__top {
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__contacts {
+        width: 292px;
+        padding: 19px 0 0;
+
+        .phone {
+            margin: 0 0 17px;
+        }
+    }
+
+
+    &-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        &__item {
+            position: relative;
+            font-family: 'montserratbold';
+            padding: 0 0 15px;
+
+            &_active {
+                .header-menu__link {
+                    color: $actve-color;
+                }
+
+                &::after {
+                    content: '';
+                    height: 6px;
+                    width: 100%;
+                    background: $actve-color;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        &__link {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                color: $actve-color;
+            }
+        }
+    }
+
+    &__content {
+        padding: 70px 0 0;
+        width: 580px;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 72px;
+        line-height: 72px;
+        font-family: 'montserratblack';
+        text-shadow: 0 0 13px rgba(0, 0, 0, .15);
+        padding: 0 0 30px;
+    }
+
+    &-list {
+        margin: 0;
+        padding: 0 0 80px;
+        list-style: none;
+
+        &__item {
+            font-size: 24px;
+            line-height: 26px;
+            position: relative;
+            padding: 0 0 10px 25px;
+
+            &::before {
+                content: '';
+                width: 12px;
+                height: 12px;
+                background: #ad4aba;
+                position: absolute;
+                top: 8px;
+                left: 0;
+                border-radius: 100%;
+            } 
+        }
+    }
+
+    &__oreder {
+        width: 293px;
+        height: 573px;
+        background: rgba($color: #33244e, $alpha: .9);
+        border-radius: 24px 24px 0 0;
+        padding: 33px 12px 0;
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        &-title {
+            text-align: center;
+            font-size: 24px;
+            line-height: 30px;
+            font-family: 'open_sansbold';
+            text-transform: uppercase;
+            padding: 0 0 20px;
+        }
+
+        .form-row {
+            padding: 0 0 8px;
+        }
+    }
+
+    .order-footer {
+        padding: 22px 0 0;
+        text-align: center;
+    }
+}
