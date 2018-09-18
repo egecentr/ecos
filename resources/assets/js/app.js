@@ -42,7 +42,8 @@ const app = new Vue({
     },
     methods: {
         makeRequest() {
-            closePopUp()
+            // closePopUp()
+            $('.popup-wrapper').fadeOut();
             if (!this.request.phone) {
                 return
             }
@@ -50,7 +51,8 @@ const app = new Vue({
             axios.post('/api/request', this.request).then(() => {
                 this.request = {}
             })
-            getThankYouPopup()
+            // getThankYouPopup()
+            $('.popup-thank-you').fadeIn();
         },
         closeRequestModal() {
             this.request = {}

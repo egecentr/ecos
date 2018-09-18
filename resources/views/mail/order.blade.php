@@ -1,4 +1,7 @@
 <div>
+    Место отправки: {{ @$request->place }}
+</div>
+<div>
     Имя: {{ @$request->name }}
 </div>
 <div>

@@ -1023,7 +1023,8 @@ var app = new Vue({
         makeRequest: function makeRequest() {
             var _this = this;
 
-            closePopUp();
+            // closePopUp()
+            $('.popup-wrapper').fadeOut();
             if (!this.request.phone) {
                 return;
             }
@@ -1031,7 +1032,8 @@ var app = new Vue({
             axios.post('/api/request', this.request).then(function () {
                 _this.request = {};
             });
-            getThankYouPopup();
+            // getThankYouPopup()
+            $('.popup-thank-you').fadeIn();
         },
         closeRequestModal: function closeRequestModal() {
             this.request = {};
