@@ -5,13 +5,29 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Yeomify generator</title>
+	<title>Корейская косметика оптом</title>
 
 	<meta name="description" content="">
 	<meta name="author" content="">
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+    
+    <script>
+		function initMap() {
+			var tailor = {lat: 55.766883, lng: 37.641512};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 16, 
+				center: tailor, 
+				disableDefaultUI: true, 
+				zoomControl: false, 
+				mapTypeControl: true}
+				);
+			var marker = new google.maps.Marker({position: tailor, map: map, title: 'Ecos'});
+	  	}
+	</script>  
+
+
 </head>
 <body>
 
@@ -38,13 +54,13 @@
 						class="header__contacts">
 						<div
 							class="phone">
-							+7 (495) 456-55-77
+							+7 (495) 662-95-20
 						</div>
 						<div
 							class="email">
 							<a
-								href="matilto:info@melany.ru">
-								info@melany.ru
+								href="matilto:info@ecosmetik.ru">
+								info@ecosmetik.ru
 							</a>
 						</div>
 					</div>
@@ -63,7 +79,7 @@
 						</a>
 					</li>
 					<li
-						class="header-menu__item header-menu__item_active">
+						class="header-menu__item">
 						<a
 							href="#"
 							title="Продукция"
@@ -123,7 +139,7 @@
 						class="header-list">
 						<li
 							class="header-list__item">
-							Маржинальность до 80%.
+							Высокая маржинальность.
 						</li>
 						<li
 							class="header-list__item">
@@ -140,11 +156,11 @@
 					</ul>
 
 					<a
-						href="#"
+						href="pictures/20180907_ПРАЙС_ЛИСТ.xlsx" download
 						title=""
 						class="btn-download-price">
 						<span>
-							Скачать прайс
+							Хочу прайс!
 						</span>
 						с формой заказа
 					</a>
@@ -255,7 +271,7 @@
 						class="benefits-list__title">
 						Сертифицированный и качественный продукт
 					</div>
-					Все продукты имеют сертификаты качества EAC.
+					Все продукты имеют сертификаты качества EAC
 				</li>
 				<li
 					class="benefits-list__item">
@@ -270,7 +286,7 @@
 						class="benefits-list__title">
 						Мультибренды
 					</div>
-					Широкий портфель брендов
+					Широкий портфель популярных, узнаваемых брендов
 				</li>
 				<li
 					class="benefits-list__item">
@@ -285,7 +301,7 @@
 						class="benefits-list__title">
 						Быстрая скорость отгрузки
 					</div>
-					Мы оперативно собираем заказ. Вся косметика на складе в Москве и готова к отгрузке в течении дня.
+					Мы оперативно собираем заказ. Вся косметика на складе в Москве и готова к отгрузке
 				</li>
 				<li
 					class="benefits-list__item">
@@ -298,7 +314,7 @@
 					</div>
 					<div
 						class="benefits-list__title">
-						Оптимальные оптовые цены
+						Низкие закупочные цены
 					</div>
 					Работая с нами вы получаете косметику по оптимальным ценам и получаете высокую наценку
 				</li>
@@ -315,7 +331,7 @@
 						class="benefits-list__title">
 						Адекватная минимальная партия
 					</div>
-					Минимальная партия всего 30 000 рублей. Количество позиций любое.
+					Минимальная партия от 15 000 рублей. Количество позиций любое
 				</li>
 				<li
 					class="benefits-list__item">
@@ -330,7 +346,7 @@
 						class="benefits-list__title">
 						Описания на каждую единицу товара
 					</div>
-					Все товары промаркированы и имеют описания на русском языке согласно закона.
+					Все товары имеют маркировку на русском языке. Предоставляем фото и описания
 				</li>
 				<li
 					class="benefits-list__item">
@@ -343,9 +359,9 @@
 					</div>
 					<div
 						class="benefits-list__title">
-						Средний и премиальный сегмент
+						Несколько сегментов рынка
 					</div>
-					Мы работаем с качественной косметикой, в которой заявленные свойства работают
+					Мы работаем c масс и мидл-маркета. Целевая аудитория от 16 до 65 лет
 				</li>
 				<li
 					class="benefits-list__item">
@@ -373,7 +389,7 @@
 				class="content-center">
 
 				<h1>
-					МЫ ПРЕДЛАГАЕМ
+					ПОРТФЕЛЬ БРЕНДОВ
 				</h1>
 
 				<ul
@@ -445,7 +461,7 @@
 							Вы делаете заказ
 						</div>
 						Минимальная партия <br>
-						30 000 т.р. Чем больше заказ, тем больше скидка.
+						15 000 т.р. Индивидуальное предложение в зависимости от объема.
 					</li>
 					<li
 						class="how-we-work-list__item">
@@ -469,7 +485,7 @@
 							class="how-we-work-list__title">
 							Мы формируем заказ
 						</div>
-						Помогаем вам, учитываем особенности вашего магазина.
+						Заключаем договор, помогаем с подбором, формируем партию к отправке.
 					</li>
 					<li
 						class="how-we-work-list__item">
@@ -493,7 +509,7 @@
 							class="how-we-work-list__title">
 							Оперативно доставляем ваш заказ
 						</div>
-						Помогаем вам, учитываем особенности вашего магазина.
+						Доставка по Москве 2 раза в неделю при заказе на сумму от 15 т.р. Доставка в другие города осуществляется за счет покупателя.
 					</li>
 					<li
 						class="how-we-work-list__item">
@@ -517,7 +533,7 @@
 							class="how-we-work-list__title">
 							Предоставляем все материалы
 						</div>
-						Помогаем вам, учитываем особенности вашего магазина.
+						Предоставляем маркетинговые материалы, сертификаты, фотографии, описания, стикеры и прочую информацию.
 					</li>
 					<li
 						class="how-we-work-list__item how-we-work-list__item_last">
@@ -615,9 +631,9 @@
 
 						<div
 							class="more-benefits-list__title">
-							Новинки каждый квартал
+							Система предзаказа
 						</div>
-						Мы находимся в постоянном поиске интересной и качественной косметики. И обязательно показываем вам результаты.
+						 Вы заранее озвучиваете потребность в конкретных количествах и позициях, а мы его заказываем и закрепляем под вас.
 					</li>
 					<li
 						class="more-benefits-list__item">
@@ -731,7 +747,7 @@
 							</li>
 							<li
 								class="individual-approach-list__item">
-								Официальная косметика.
+								Официально подтвержденная косметика.
 							</li>
 							<li
 								class="individual-approach-list__item">
@@ -759,7 +775,7 @@
 							</li>
 							<li
 								class="individual-approach-list__item">
-								Несколько ценовых сегментов.
+								Несколько ценовых сегментов. ЦА от 16 до 65 лет.
 							</li>
 							<li
 								class="individual-approach-list__item">
@@ -907,7 +923,7 @@
 					</div>
 
 					<a
-						href="#"
+						href="pictures/20180907_ПРАЙС_ЛИСТ.xlsx" download
 						title=""
 						class="button button_download-xml">
 						Получить <br>
@@ -923,8 +939,8 @@
 					<div
 						class="email">
 						<a
-							href="matilto:info@email.ru">
-							info@email.ru
+							href="matilto:info@ecosmetik.ru">
+							info@ekosmetik.ru
 						</a>
 					</div>
 				</div>
@@ -954,7 +970,7 @@
 						<a
 							href="#">
 							<img
-								src="pictures/img-2.jpg"
+								src="pictures/wb.jpg"
 								alt="partners"
 							/>
 						</a>
@@ -964,7 +980,7 @@
 						<a
 							href="#">
 							<img
-								src="pictures/img-2.jpg"
+								src="pictures/pd.jpg"
 								alt="partners"
 							/>
 						</a>
@@ -974,7 +990,7 @@
 						<a
 							href="#">
 							<img
-								src="pictures/img-2.jpg"
+								src="pictures/lm.jpg"
 								alt="partners"
 							/>
 						</a>
@@ -984,7 +1000,7 @@
 						<a
 							href="#">
 							<img
-								src="pictures/img-2.jpg"
+								src="pictures/oz.jpg"
 								alt="partners"
 							/>
 						</a>
@@ -994,7 +1010,7 @@
 						<a
 							href="#">
 							<img
-								src="pictures/img-2.jpg"
+								src="pictures/az.jpg"
 								alt="partners"
 							/>
 						</a>
@@ -1004,7 +1020,7 @@
 						<a
 							href="#">
 							<img
-								src="pictures/img-2.jpg"
+								src="pictures/sp.jpg"
 								alt="partners"
 							/>
 						</a>
@@ -1020,11 +1036,9 @@
 			class="contacts">
 			<div
 				class="contacts__map">
-				<img
-					src="pictures/map.jpg"
-					alt="map"
-
-				/>
+				
+					<div style="width: auto; height: 680px" id="map"></div>
+				
 			</div>
 
 			<div
@@ -1041,16 +1055,16 @@
 						class="contacts-list">
 						<li
 							class="contacts-list__item contacts-list__item_adress">
-							Адрес: г. Краснодар ул. <br>
-							Ставропольская, д. 109/2
+							Адрес: г. Москва ул. <br>
+							Мясницкая, д. 40, стр.1
 						</li>
 						<li
 							class="contacts-list__item contacts-list__item_time">
-							с 09:00 до 20:00
+							с 10:00 до 19:00
 						</li>
 						<li
 							class="contacts-list__item contacts-list__item_phone">
-							+7 (495) 456-55-77
+							+7 (495) 662-95-20
 						</li>
 					</ul>
 
@@ -1077,7 +1091,7 @@
 
 				<div
 					class="phone">
-					+7 (495) 456-55-77
+					+7 (495) 662-95-20
 				</div>
 
 				<a
@@ -1093,5 +1107,6 @@
         @include('modals/modals')
 	</div>
 	<script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhNgrdMstCmf6QB89owE7CDk0t_xAylyc&callback=initMap" async defer></script>
 </body>
 </html>
