@@ -41,7 +41,7 @@ const app = new Vue({
         }
     },
     methods: {
-        makeRequest() {
+        makeRequest(place) {
             // closePopUp()
             $('.popup-wrapper').fadeOut();
             if (!this.request.phone) {

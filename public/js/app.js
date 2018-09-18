@@ -1020,7 +1020,7 @@ var app = new Vue({
     },
 
     methods: {
-        makeRequest: function makeRequest() {
+        makeRequest: function makeRequest(place) {
             var _this = this;
 
             // closePopUp()
