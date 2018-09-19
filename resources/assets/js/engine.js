@@ -48,10 +48,5 @@ window.closePopup = function() {
 }
 
 window.gaEvent = function(name) {
-    window.dataLayer = window.dataLayer || []
-    window.dataLayer.push({
-        event: 'interaction',
-        eventCategory: name,
-        eventAction: null
-    })
+    ga('send', 'event', 'interaction', name)
 }
