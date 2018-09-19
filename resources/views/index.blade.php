@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126046363-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-126046363-1');
+	</script>
 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
@@ -12,20 +20,20 @@
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-    
+
     <script>
 		function initMap() {
 			var tailor = {lat: 55.766883, lng: 37.641512};
 			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom: 16, 
-				center: tailor, 
-				disableDefaultUI: true, 
-				zoomControl: false, 
+				zoom: 16,
+				center: tailor,
+				disableDefaultUI: true,
+				zoomControl: false,
 				mapTypeControl: true}
 				);
 			var marker = new google.maps.Marker({position: tailor, map: map, title: 'Ecos', icon: "pictures/Ecosmarker.png"});
 	  	}
-	</script>  
+	</script>
 
 
 </head>
@@ -155,7 +163,7 @@
 						</li>
 					</ul>
 
-					<a
+					<a onclick="gaEvent('«Хочу прайс!» в шапке')"
 						href="pictures/20180907_ПРАЙС_ЛИСТ.xlsx" download
 						title=""
 						class="btn-download-price">
@@ -229,7 +237,7 @@
 						</div>
 						<div
 							class="order-footer">
-							<input @click="makeRequest('Форма вверху')"
+							<input @click="makeRequest('Форма вверху')" onclick="gaEvent('«Отправить» в шапке')"
 								type="button"
 								value="Отправить"
 								title="Отправить"
@@ -673,7 +681,7 @@
 
 				<div
 					class="text-center">
-					<a
+					<a onclick="gaEvent('«Начать работу» в блоке «Дополнительное преимущество»')"
 						title="Начать работу"
 						href="#"
 						class="button get-callback-popup">
@@ -904,7 +912,7 @@
 							</div>
 							<div
 								class="order-footer">
-								<input @click="makeRequest('Форма внизу')"
+								<input @click="makeRequest('Форма внизу')" onclick="gaEvent('«Отправить» в блоке заявки')"
 									type="button"
 									value="Отправить"
 									title="Отправить"
@@ -928,7 +936,7 @@
 						с фактическим наличием и графой заказа.
 					</div>
 
-					<a
+					<a onclick="gaEvent('«Получить прайс» в блоке заявки')"
 						href="pictures/20180907_ПРАЙС_ЛИСТ.xlsx" download
 						title=""
 						class="button button_download-xml">
@@ -1045,9 +1053,9 @@
 			class="contacts">
 			<div
 				class="contacts__map">
-				
+
 					<div style="width: auto; height: 680px" id="map"></div>
-				
+
 			</div>
 
 			<div
@@ -1103,7 +1111,7 @@
 					+7 (495) 662-95-20
 				</div>
 
-				<a
+				<a onclick="gaEvent('«Обратный звонок» в футере')"
 					title="Обратный звонок"
 					style='cursor: pointer'
 					class="button button_small get-callback-popup">

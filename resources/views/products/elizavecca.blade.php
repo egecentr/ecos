@@ -56,7 +56,7 @@
 
         <a
             href="" 
-            title="Подробнее"
+            title="Подробнее" onclick="gaEvent('Нажатие кнопки в галерее')"
             class="button get-callback-popup">
             Подробнее
         </a>

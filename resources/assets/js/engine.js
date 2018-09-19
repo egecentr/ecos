@@ -46,3 +46,12 @@ window.getThankYouPopup = function() {
 window.closePopup = function() {
     $('.popup-wrapper').fadeOut();
 }
+
+window.gaEvent = function(name) {
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+        event: 'interaction',
+        eventCategory: name,
+        eventAction: null
+    })
+}
