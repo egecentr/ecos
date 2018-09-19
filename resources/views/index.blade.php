@@ -23,7 +23,7 @@
 				zoomControl: false, 
 				mapTypeControl: true}
 				);
-			var marker = new google.maps.Marker({position: tailor, map: map, title: 'Ecos'});
+			var marker = new google.maps.Marker({position: tailor, map: map, title: 'Ecos', icon: "pictures/Ecosmarker.png"});
 	  	}
 	</script>  
 
@@ -72,25 +72,25 @@
 					<li
 						class="header-menu__item">
 						<a
-							href="#"
+							href="#benefits"
 							title="О компании"
 							class="header-menu__link">
-							О компании
+							Для вас
 						</a>
 					</li>
 					<li
 						class="header-menu__item">
 						<a
-							href="#"
+							href="#products"
 							title="Продукция"
 							class="header-menu__link">
-							Продукция
+							Бренды
 						</a>
 					</li>
 					<li
 						class="header-menu__item">
 						<a
-							href="#"
+							href="#how-we-work"
 							title="Схема работы"
 							class="header-menu__link">
 							Схема работы
@@ -99,16 +99,16 @@
 					<li
 						class="header-menu__item">
 						<a
-							href="#"
+							href="#more-benefits"
 							title="Преимущества"
 							class="header-menu__link">
-							Преимущества
+							Дополнительно
 						</a>
 					</li>
 					<li
 						class="header-menu__item">
 						<a
-							href="#"
+							href="#order"
 							title="Прайс-лист"
 							class="header-menu__link">
 							Прайс-лист
@@ -117,7 +117,7 @@
 					<li
 						class="header-menu__item">
 						<a
-							href="#"
+							href="#contacts"
 							title="Контакты"
 							class="header-menu__link">
 							Контакты
@@ -243,6 +243,7 @@
 		</header>
 
 		<!--~~~~~ Benefits ~~~~~-->
+		<section id="benefits">
 		<div
 			class="benefits">
 
@@ -383,6 +384,7 @@
 		</div>
 
 		<!--~~~~~ Products ~~~~~-->
+		<section id="products">
 		<div
 			class="products">
 			<div
@@ -427,6 +429,7 @@
 		</div>
 
 		<!--~~~~~ How we work ~~~~~-->
+		<section id="how-we-work">
 		<div
 			class="how-we-work">
 
@@ -562,6 +565,7 @@
 		</div>
 
 		<!--~~~~~ More Benefits ~~~~~-->
+		<section id="more-benefits">
 		<div
 			class="more-benefits">
 			<div
@@ -681,14 +685,15 @@
 		</div>
 
 		<!--~~~~~ Individual approach ~~~~~-->
+		<section id="individual-approach">
 		<div
 			class="individual-approach">
 			<div
 				class="content-center">
 
 				<h1>
-					ИНДИВИДУАЛЬНЫЙ <br>
-					ПОДХОД ДЛЯ КАЖДОГО
+					ИНДИВИДУАЛЬНО <br>
+					ДЛЯ КАЖДОГО
 				</h1>
 
 				<div
@@ -829,6 +834,7 @@
 		</div>
 
 		<!--~~~~~ Order ~~~~~-->
+		<section id="order">
 		<div
 			class="order">
 			<div
@@ -919,7 +925,7 @@
 
 					<div
 						class="order-text">
-						с подробными условиями и графой заказа.
+						с фактическим наличием и графой заказа.
 					</div>
 
 					<a
@@ -933,7 +939,8 @@
 					<div
 						class="order-text-under">
 						После заполнения отправьте <br>
-						его на нашу почту для начала работы
+						его на нашу почту для начала работы.<br><br>
+Также, мы работаем по системе предзаказа. Вы заранее озвучиваете потребность в конкретных количествах и позициях, а мы его заказываем и закрепляем под вас.
 					</div>
 
 					<div
@@ -948,6 +955,7 @@
 		</div>
 
 		<!--~~~~~ Partners ~~~~~-->
+		<section id="partners">
 		<div
 			class="partners">
 
@@ -1032,6 +1040,7 @@
 		</div>
 
 		<!--~~~~~ Contacts ~~~~~-->
+		<section id="contacts">
 		<div
 			class="contacts">
 			<div
@@ -1107,6 +1116,6 @@
         @include('modals/modals')
 	</div>
 	<script type="text/javascript" src="{{ mix('/js/app.js') }}"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhNgrdMstCmf6QB89owE7CDk0t_xAylyc&callback=initMap" async defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACs4w7nLRdBWkl6cbTgL-Lazw5yUv9-ZY&callback=initMap" async defer></script>
 </body>
 </html>

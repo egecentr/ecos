@@ -61,7 +61,7 @@ return [
     ],
 
 	'to' => [
-    'address' => 'info@etailor.ru',
+    'address' => 'erdmanagency@gmail.com',
     'name' => 'Example'
 	],
     /*

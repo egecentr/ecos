@@ -729,7 +729,7 @@ h3 {
 }
 
 .products .product-item {
-  padding: 35px 0 0;
+  padding: 25px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -744,11 +744,11 @@ h3 {
   margin: 0;
   padding: 0 0 20px;
   list-style: none;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .products .product-item-describe__item {
-  line-height: 30px;
+  line-height: 25px;
   padding: 0 0 2px;
 }
 
